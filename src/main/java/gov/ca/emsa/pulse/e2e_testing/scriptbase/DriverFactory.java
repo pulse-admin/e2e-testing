@@ -7,6 +7,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
 
 import static gov.ca.emsa.pulse.e2e_testing.scriptbase.ApplicationConstant.REMOTE_URL;
 
@@ -37,12 +38,12 @@ import java.net.URL;
 			DesiredCapabilities caps = new DesiredCapabilities();
 			
 			if (driverName.toUpperCase().contentEquals("CHROME")){
-				String chromeBinarypath;
-				chromeBinarypath = System.getProperty("C:\\MyDevelopment\\ProjectFolder\\e2e-testing\\src\\test\\resources\\driver");
-				System.setProperty("webdriver.chrome.driver", chromeBinarypath);
+			    ChromeDriverManager.getInstance().setup();
 				return new ChromeDriver();
+				
 			}else if (driverName.toUpperCase().contentEquals("HTML")){
 				return new HtmlUnitDriver();
+				
 			}else if(driverName.toUpperCase().contentEquals("FIREFOX")){
 				return new FirefoxDriver();
 			}

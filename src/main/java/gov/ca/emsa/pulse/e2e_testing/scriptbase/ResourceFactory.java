@@ -11,8 +11,7 @@ public class ResourceFactory {
 	private ResourceFactory() {
 		appProperties = new Properties();
 		try {
-			appProperties.load(new FileInputStream(new File(
-					"C:\\MyDevelopment\\ProjectFolder\\e2e-testing\\src\\test\\resources\\config\\conf.properties")));
+			appProperties.load(new FileInputStream(new File("C:\\MyDevelopment\\ProjectFolder\\e2e-testing\\src\\test\\resources\\config\\conf.properties")));
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

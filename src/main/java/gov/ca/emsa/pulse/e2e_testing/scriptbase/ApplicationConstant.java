@@ -2,6 +2,8 @@ package gov.ca.emsa.pulse.e2e_testing.scriptbase;
 
 public class ApplicationConstant {
 	 public static final String URL = "52.32.239.69";
+	 public static final String USER_NAME = "myself";
+	 public static final String PASS_WORD = "myself";
 	 public static final String ID = "PERS.EH.01";
 	 public static final String FIRST_NAME = "John";
 	 public static final String LAST_NAME = "Doe";
@@ -13,8 +15,10 @@ public class ApplicationConstant {
 	 public static final String CITY = "Carmel";
 	 public static final String STATE = "CA";
 	 public static final String ZIP_CODE = "10598";
+	 public static final String COUNTRY = "usa";
+	 public static final String SSN = "451674563";
 	 public static final String RMUSERNAME = "awazed";
-	 public static final String AUTO_KEY = "**************";
-	 public static final String REMOTE_URL = "https://" + RMUSERNAME + ":" + AUTO_KEY + "@hub-cloud.browserstack.com/wd/hub";
+	 public static final String RMAUTO_KEY = "**************";
+	 public static final String REMOTE_URL = "https://" + RMUSERNAME + ":" + RMAUTO_KEY + "@hub-cloud.browserstack.com/wd/hub";
 }
 

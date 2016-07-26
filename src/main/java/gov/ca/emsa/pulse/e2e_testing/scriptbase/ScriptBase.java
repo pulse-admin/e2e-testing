@@ -1,8 +1,11 @@
 package gov.ca.emsa.pulse.e2e_testing.scriptbase;
 
+
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
+
+
 
 public class ScriptBase {
 	

@@ -1,4 +1,4 @@
-package gov.ca.emsa.pulse.e2e_testing.steps;
+/*package gov.ca.emsa.pulse.e2e_testing.steps;
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,3 +24,4 @@ public class BeforeAfterSteps {
 		DriverFactory.getInstance().removeDriver();
 	}
 }
+*/
