@@ -32,6 +32,6 @@ public class ScriptBase {
 
 	@After
 	public void tearDown() {
-		DriverFactory.getInstance().removeDriver();
+		//DriverFactory.getInstance().removeDriver();
 	}
 }

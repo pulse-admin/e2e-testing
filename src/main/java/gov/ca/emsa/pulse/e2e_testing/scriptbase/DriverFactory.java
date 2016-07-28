@@ -18,13 +18,13 @@ import java.net.URL;
 	public class DriverFactory {
 
 	private DriverFactory(){
-		 //Do not allow to initialize this class from outside
+		 
 	}
 	
-	//private static DriverFactory instance = new DriverFactory();
+	private static DriverFactory instance = new DriverFactory();
 	
 	public static DriverFactory getInstance(){
-		DriverFactory instance = new DriverFactory();
+		
 		return instance;
 		
 	}

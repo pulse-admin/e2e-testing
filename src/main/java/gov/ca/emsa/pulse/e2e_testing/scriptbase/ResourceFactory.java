@@ -27,6 +27,7 @@ public class ResourceFactory {
 	public <T> T getProperty(String key){
 		Object value = appProperties.getProperty(key);
         return (T) value;
+       
 	}
 	 
 }
