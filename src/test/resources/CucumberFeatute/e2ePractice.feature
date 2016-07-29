@@ -1,5 +1,5 @@
 	Feature: PULSE e2e Test.
-@Step1
+
   Scenario: Open Pulse Website
     Given As a user i open the driver
     When As a user i navigate to the "http://52.32.239.69"
@@ -7,7 +7,7 @@
     And As a user i put username
     And As a user i put password
 
-@Step2
+
   Scenario: New acf registration.
     
     Given As a user i click on acf not found
@@ -34,14 +34,14 @@
      Given As a user i want to verify patient query page
     	When I want to verify the error in the bottom
     	
-  @Step3  	
+ 	
   Scenario Outline: Search for patient with valid information
    
     Given I enter the patient firstname "<firstname>" to search
-    Given  I enter the patient lastname "<lastname>" to search
+    Given I enter the patient lastname "<lastname>" to search
     Given I enter patient last four "<ssn>" to search
-    Then I click on search
-    And I want to verify the result
+    Then 	I click on search
+    And 	I want to verify the result
     
     Examples: 
     |firstname|lastname	|ssn	|

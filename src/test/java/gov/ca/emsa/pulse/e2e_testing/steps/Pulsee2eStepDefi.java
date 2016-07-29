@@ -160,6 +160,7 @@ public void i_click_on_search() throws Throwable {
 
 @Then("^I want to verify the result$")
 public void i_want_to_verify_the_result() throws Throwable {
-	pulse.acfRegPage().verify_QueryResult();
+	pulse.acfRegPage().pList("John", 4563);
+	//verify_QueryResult();
 }
 }
