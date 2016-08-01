@@ -11,6 +11,7 @@ public class Application {
 	
 	public Application(WebDriver driver){
 		this.driver = driver;
+		acfPage = new AcfRegPage(driver);
 	}
 	
 	public WebDriver getDriver(){
@@ -22,6 +23,6 @@ public class Application {
 	}
 	
 	public void GoToApplication(){
-		driver.navigate().to(ResourceFactory.getInstance().getProperty("").toString());
+		driver.navigate().to(ResourceFactory.getInstance().getProperty("APP_URL").toString());
 	}
 }
